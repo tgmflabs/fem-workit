@@ -1,0 +1,38 @@
+h1,h2,h3{
+ font-family: "Fraunces", 'Times New Roman', Times, serif;
+  font-weight:600;
+  letter-spacing: 0;  
+}
+
+p{
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-size: clamp(1rem, 1.1896551724137931rem + -0.27586206896551724vw, 1.125rem);
+    line-height: 180%;
+}
+
+h1{
+    font-size: 3.125rem;
+    font-size: clamp(3.125rem, 2.155172413793103rem + 4.137931034482759vw, 5rem);
+
+    line-height: 100%;
+}
+
+
+h2{
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.2241379310344829rem + 3.3103448275862064vw, 3.5rem);
+
+    line-height: 120%;
+    
+}
+
+
+h3{
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.2413793103448276rem + 1.103448275862069vw, 2rem);
+    
+    line-height: 120%;
+}
+
+

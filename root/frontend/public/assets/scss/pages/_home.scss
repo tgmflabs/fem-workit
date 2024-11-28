@@ -1,0 +1,19 @@
+body{
+  background-color: var(--purple-100);  
+}
+section{
+    height: 100vh;
+
+}
+
+
+.hero-section{
+  background-color: var(--purple-900);
+  color: var(--white);
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

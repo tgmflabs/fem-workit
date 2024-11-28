@@ -1,0 +1,127 @@
+@import "https://unpkg.com/open-props";
+:root {
+  --green: #44FFA1;
+  --purple-900:#24053E;
+  --purple-500: #584D62;
+  --purple-100: #FCF8FF;
+  --white: #fff;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", "Times New Roman", Times, serif;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+p {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-size: clamp(1rem, 1.1896551724rem - 0.275862069vw, 1.125rem);
+  line-height: 180%;
+}
+
+h1 {
+  font-size: 3.125rem;
+  font-size: clamp(3.125rem, 2.1551724138rem + 4.1379310345vw, 5rem);
+  line-height: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.224137931rem + 3.3103448276vw, 3.5rem);
+  line-height: 120%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.2413793103rem + 1.1034482759vw, 2rem);
+  line-height: 120%;
+}
+
+body {
+  background-color: var(--purple-100);
+}
+
+section {
+  height: 100vh;
+}
+
+.hero-section {
+  background-color: var(--purple-900);
+  color: var(--white);
+}
+.hero-section__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* manrope-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/manrope-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/fraunces-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* optional imports that use the props *//*# sourceMappingURL=main.css.map */
